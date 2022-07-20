@@ -1,0 +1,64 @@
+<html>
+<head>
+	<script>
+    function trig()
+    {
+      var a, sin,cos,tan;
+      var pi = Math.PI;
+      deg = parseInt(document.getElementById("first").value);
+      a = deg * (pi/180);
+      sin = Math.sin(a);
+      cos = Math.cos(a);
+      tan = Math.tan(a);
+      document.getElementById("sin").value = sin;
+      document.getElementById("cos").value = cos;
+      document.getElementById("tan").value = tan;
+    }
+	</script>
+
+	<style>
+		.title{
+    background-image:linear-gradient(pink,yellow);
+		margin-bottom: 10px;
+		text-align:center;
+		width: 400px;
+		color:magenta;
+		border: solid black 2px;
+		}
+
+		input[type="button"]
+		{
+		background-color:green;
+		color: black;
+		border: solid black 2px;
+		width:100%
+		}
+
+		input[type="text"]
+		{
+		background-color:gray;
+		border: solid black 2px;
+		width:100%
+		}
+	</style>
+</head>
+
+<body>
+	<div class = title ><h1>Trigonometric Calculator</h1> </div>
+	<table style="width:50%" border="4">
+		<tr>
+      <td>
+        <div class = title > Format: A is angle in degrees </div>
+      </td>
+      <td>
+        <p>Enter A: <input id="first"></p>
+        <button onclick="trig()">Calculate</button>
+        <p>sin(A) = <input id="sin"></p>
+        <p>cos(A) = <input id="cos"></p>
+        <p>tan(A) = <input id="tan"></p>
+      </td>
+    </tr>
+	</table>
+	<br><button onclick="document.location='scnt.html'"><h4>Click to go back</h4></button>
+</body>
+</html>

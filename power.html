@@ -1,0 +1,58 @@
+<html>
+<head>
+	<script>
+    function power()
+    {
+      var a, base, answer;
+      a = parseInt(document.getElementById("first").value);
+      b = parseInt(document.getElementById("second").value);
+      answer = Math.pow(a,b);
+      document.getElementById("answer").value = answer;
+    }
+	</script>
+
+	<style>
+		.title{
+    background-image:linear-gradient(pink,yellow);
+		margin-bottom: 10px;
+		text-align:center;
+		width: 400px;
+		color:magenta;
+		border: solid black 2px;
+		}
+
+		input[type="button"]
+		{
+		background-color:green;
+		color: black;
+		border: solid black 2px;
+		width:100%
+		}
+
+		input[type="text"]
+		{
+		background-color:white;
+		border: solid black 2px;
+		width:100%
+		}
+	</style>
+</head>
+
+<body>
+	<div class = title ><h1>Exponent Calculator</h1> </div>
+	<table style="width:50%" border="4">
+		<tr>
+      <td>
+        <div class = title > <h2>Format: A^B</h2> </div>
+      </td>
+      <td>
+        <p>Enter A: <input id="first"></p>
+        <p>Enter B: <input id="second"></p>
+        <button onclick="power()">Calculate</button>
+        <p>Answer = <input id="answer"></p>
+      </td>
+    </tr>
+	</table>
+	<br><button onclick="document.location='scnt.html'"><h4>Click to go back</h4></button>
+</body>
+</html>
