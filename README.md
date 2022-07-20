@@ -1,3 +1,2 @@
 # calc
-Open with home.html to begin with the web app.
-Mouse Click Interface.
+Mouse Click Interface for the web-app.
